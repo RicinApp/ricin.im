@@ -1,0 +1,66 @@
+.hero {
+  text-align: center;
+  padding: 40px 0 72px 0;
+}
+
+#header {
+  padding: 40px 48px 39px 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  margin-bottom: 0 !important;
+}
+#header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header a {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+#header a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+#header ul li {
+  display: inline-block;
+  margin-right: 1.65em;
+}
+
+#header .nav-left {
+  text-align: left;
+  width: 35%;
+}
+#header .brand {
+  text-align: center;
+  width: 30%;
+}
+#header .brand a {
+  font-weight: 900;
+  text-decoration: none;
+  color: #000000;
+}
+#header .nav-right {
+  text-align: right;
+  width: 35%;
+}
+
+/********************/
+#intro {
+  text-align: center;
+  padding: 1.65em;
+
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+#intro p:last-child {
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+
+#features {
+  padding: 1.65em;
+}
