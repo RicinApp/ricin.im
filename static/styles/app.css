@@ -9,6 +9,10 @@ section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
+section:last-child {
+  border: none;
+}
+
 #header {
   padding: 40px 48px 39px 48px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -107,6 +111,44 @@ section {
   width: 450px;
   margin: 0 auto 1.65em;
   display: block;
+}
+
+#features {
+  background: #f5f5f5;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+#features section {
+  text-align: justify;
+}
+#features section h3 {
+  text-align: center;
+}
+
+#features .screenshots {
+  max-width: 50%;
+  margin: 24px;
+}
+
+#features row,
+#features .end {
+  margin-bottom: 0;
+}
+
+#changelog .table-changelog {
+  width: 600px;
+  margin: 0 auto;
 }
 
 /** RESPONSIVENESS **/

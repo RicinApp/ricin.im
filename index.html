@@ -41,13 +41,133 @@
     </section>
     <section id="features">
       <row>
-        <column cols="3" class="text-centered"><!-- TODO: Feature list --></column>
-        <column cols="6" class="text-centered">
-          <!-- TODO: Slideshow -->
-          <img src="https://proxy.instant-hack.com/?img=aHR0cDovL2kuaW1ndXIuY29tL2k2WkJDa2EucG5n">
+        <column cols="3" class="text-centered">
+          <section>
+            <h3>Instant messaging</h3>
+            Chat instantly across the globe with Ricin's secure messages. No one except the people you talks to will be able to read your messages!
+          </section>
+          <section>
+            <h3>File sharing</h3>
+            Share files securely with your friends. No artificial limits or caps. The only limitations are your connections speed !
+          </section>
+          <section>
+            <h3>Distributed</h3>
+            Ricin has no central servers that can be raided, shut down, or forced to turn over data — the network is made up of its users. Say goodbye to server outages!
+          </section>
         </column>
-        <column cols="3" class="text-centered"><!-- TODO: Feature list --></column>
+        <column cols="6" class="text-centered screenshots">
+          <h1>Discover a new way to share ?</h1>
+          <h4>Ricin gives you super-powers!</h4>
+          <!-- TODO: Slideshow -->
+          <img src="static/images/ricin_01.png">
+        </column>
+        <column cols="3" class="text-centered end">
+          <section>
+            <h3>Swagg !</h3>
+            Ricin's goal is to be eye-candy and beautiful. So, enjoy!
+          </section>
+          <section>
+            <h3>Encrypted</h3>
+            Everything you do with Ricin is encrypted using open-source libraries. The only people who can see your conversations are the people you're talking with.
+          </section>
+          <section>
+            <h3>Free!</h3>
+            Ricin is free software. That's <a href="https://www.gnu.org/philosophy/free-sw.html">free as in freedom</a>, as well as in price. This means Ricin is yours — to use, modify, and share — because Ricin is developed by and for the users.
+          </section>
+        </column>
       </row>
+    </section>
+    <section id="changelog" class="text-centered">
+      <h1>Changelog</h1>
+      <h2>0.0.3-beta</h2>
+
+      <table class="table-responsive table-changelog">
+        <tbody>
+          <tr>
+            <td data-label="Type"><span class="label label-success" outline>0.0.3-beta1</span></td>
+            <td data-label="Message">New friend request widget.</td>
+          </tr>
+          <!-- News -->
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">Sidepane system to manage per-friend settings and actions.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">Custom themes system based on css overrides.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">Black custom theme - <span class="italic">(css override)</span>.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">White custom theme - <span class="italic">(css override)</span>.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">Make system themes &amp; system icons an option.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">Search contacts into the friendlist feature.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">Filters for friendlist (online, offlines, latest message time, etc).</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">New quote management widget - <span class="italic">(chatview)</span></td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-success">Addition</span></td>
+            <td data-label="Message">Get the last sent message by pressing UP key.</td>
+          </tr>
+
+          <!-- Fixes -->
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">File transfers with spaces in name.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">Quotes containing a link.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">Multiline message wrapping.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">Userstatus cycling at startup.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">Timestamp format. Now using <span class="bold">H24</span> format.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">URI's regex that was causing urls to be broken.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">The invisible "About" tab issue - <span class="italic">GTK+3.16 related</span>.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">Settings-view combo-boxes not being populated - <span class="italic">GTK+3.16 related</span>.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">Offline contact doesn't have name nor status message.</td>
+          </tr>
+          <tr>
+            <td data-label="Type"><span class="label label-primary">Fixed</span></td>
+            <td data-label="Message">Deleting a friend doesn't work - <a href="https://github.com/RicinApp/Ricin/issues/50">#50</a> related.</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </div>
 </body>
