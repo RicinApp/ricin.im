@@ -195,4 +195,10 @@ section:last-child {
     margin: 16px 0;
     display: block;
   }
+
+  #features .screenshots {
+    max-width: 100%;
+    width: 100%;
+    margin: 24px;
+  }
 }
