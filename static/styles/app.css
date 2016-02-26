@@ -12,6 +12,10 @@ section {
 section:last-child {
   border: none;
 }
+#wrapper {
+  height: 100%;
+  margin: 0;
+}
 
 #header {
   padding: 40px 48px 39px 48px;
@@ -116,18 +120,6 @@ section:last-child {
 #features {
   background: #f5f5f5;
   border-top: 1px solid rgba(0, 0, 0, 0.07);
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
 }
 #features section {
   text-align: justify;
@@ -136,12 +128,13 @@ section:last-child {
   text-align: center;
 }
 
-#features .screenshots {
-  max-width: 50%;
+/*#features .screenshots {
+  max-width: 45%;
   margin: 24px;
-}
+}*/
 
 #features row,
+#features .start,
 #features .end {
   margin-bottom: 0;
 }
@@ -149,6 +142,20 @@ section:last-child {
 #changelog .table-changelog {
   width: 600px;
   margin: 0 auto;
+}
+
+#footer {
+  height: 20px !important;
+  margin: 35px 0;
+	text-align: center;
+}
+#footer nav,#footer p {
+	float: none;
+}
+#footer nav li {
+	display: inline;
+	text-align: center;
+  margin: 0 10px;
 }
 
 /** RESPONSIVENESS **/
@@ -169,9 +176,16 @@ section:last-child {
     text-align: center !important;
     display: block !important;
   }
+  #header ul {
+    margin: 0 !important;
+  }
   #header ul li {
-    display: inline-block !important;
     width: 100% !important;
+    height: 30px;
+    line-height: 29px;
+
+    display: flex !important;
+    margin: 0 !important;
   }
 
   #header ul li a {
@@ -196,9 +210,26 @@ section:last-child {
     display: block;
   }
 
-  #features .screenshots {
-    max-width: 100%;
+  #intro .summary {
     width: 100%;
-    margin: 24px;
+    margin: 0 auto 1.65em;
+    display: block;
   }
+
+  #changelog .table-changelog {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #footer row column {
+  	margin-bottom: 0 !important;
+    height: 25px;
+    text-align: center;
+  }
+
+  /*#features .screenshots {
+    max-width: 90%;
+    width: 90%;
+    margin: 0 !important;
+  }*/
 }
