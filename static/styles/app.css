@@ -156,6 +156,7 @@ section:last-child {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #938e8e;
   text-shadow: 0 0 1px #938e8e;
+  font-size: 1em;
 }
 #features .gallery .controls .control-button:hover {
   color: #b9b9b9;
