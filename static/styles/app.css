@@ -139,11 +139,13 @@ section:last-child {
 #features .gallery .controls {
 
 }
-#features .gallery .controls .control-button {
-  color: white;
+#features .gallery .controls .control-button::before {
+  content: '•';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #938e8e;
 }
 #features .gallery .controls .control-button:hover {
-  color: #5992da;
+  color: #b9b9b9;
 }
 #features row,
 #features .start,
