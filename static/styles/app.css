@@ -28,20 +28,25 @@ section:last-child {
   clear: both;
 }
 #header a {
+  padding: 5px;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
 }
 #header a:hover {
-  text-decoration: underline;
-  color: #000000;
+  /*text-decoration: underline;*/
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  color: #2f77d1;
 }
 
 #header ul li {
   display: inline-block;
-  margin-right: 1.65em;
+  margin-right: .5em;
 }
 
 #header .nav-left {
@@ -57,6 +62,12 @@ section:last-child {
   font-weight: 900;
   text-decoration: none;
   color: #000000;
+}
+#header .brand a:hover {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #2f77d1;
 }
 #header .nav-right {
   text-align: right;
