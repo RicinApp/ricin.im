@@ -53,6 +53,7 @@ section:last-child {
   width: 30%;
 }
 #header .brand a {
+  font-size: 1.2em;
   font-weight: 900;
   text-decoration: none;
   color: #000000;
@@ -143,9 +144,11 @@ section:last-child {
   content: '•';
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #938e8e;
+  text-shadow: 0 0 1px #938e8e;
 }
 #features .gallery .controls .control-button:hover {
   color: #b9b9b9;
+  font-size: 3.5em;
 }
 #features row,
 #features .start,
@@ -179,8 +182,9 @@ section:last-child {
   }
   #header::before {
     content: 'Ricin';
-    text-transform: uppercase;
+    font-size: 1.2em;
     font-weight: 900;
+    text-transform: uppercase;
     text-align: center;
   }
 
