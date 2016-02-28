@@ -7,6 +7,7 @@
     <title>Ricin</title>
 
     <link rel="stylesheet" href="static/styles/kube.min.css">
+    <link rel="stylesheet" href="static/styles/gallery.min.css">
     <link rel="stylesheet" href="static/styles/app.css?02">
     <link rel="shortcut icon" href="static/images/favicon.ico">
     <link rel="apple-itouch-icon" href="static/images/apple-touch-icon.png">
@@ -62,10 +63,33 @@
           <h1>Wanting a new way to share?</h1>
           <h4>Ricin gives you super-powers!</h4>
           <!-- TODO: Slideshow -->
-          <figure>
+          <!--<figure>
             <img src="static/images/ricin_01.png">
             <figcaption>Screenshot might be out of date but it should give you a general idea of what Ricin is.</figcaption>
-          </figure>
+          </figure>-->
+          <div class="gallery items-3 autoplay">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+
+            <figure class="item screen">
+              <img src="static/images/ricin_01.png" width="945px" height="562px">
+            </figure>
+
+            <figure class="item screen">
+              <img src="static/images/ricin_02.png">
+            </figure>
+
+            <figure class="item screen">
+              <img src="static/images/ricin_03.png">
+            </figure>
+
+            <div class="controls">
+              <a href="#item-1" class="control-button">•</a>
+              <a href="#item-2" class="control-button">•</a>
+              <a href="#item-3" class="control-button">•</a>
+            </div>
+          </div>
         </column>
         <column cols="3" class="text-centered end">
           <section>

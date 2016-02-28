@@ -127,12 +127,24 @@ section:last-child {
 #features section h3 {
   text-align: center;
 }
+#features .screen img {
+  max-width: 100% !important;
+  height: auto;
+  display: block;
+}
+#features .gallery .item {
+  height: 100%;
+  background-color: transparent !important;
+}
+#features .gallery .controls {
 
-/*#features .screenshots {
-  max-width: 45%;
-  margin: 24px;
-}*/
-
+}
+#features .gallery .controls .control-button {
+  color: white;
+}
+#features .gallery .controls .control-button:hover {
+  color: #5992da;
+}
 #features row,
 #features .start,
 #features .end {
