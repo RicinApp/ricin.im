@@ -152,7 +152,7 @@ section:last-child {
 
 }
 #features .gallery .controls .control-button::before {
-  content: '•';
+  content: 'â€¢';
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #938e8e;
   text-shadow: 0 0 1px #938e8e;
