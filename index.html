@@ -1,138 +1,250 @@
+<!--
+  COPYRIGHT (c) 2016 SkyzohKey <skyzohkey@protonmail.com>
+
+  MIT License
+
+  Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this software and associated documentation files (the
+  "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to
+  the following conditions:
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!--
+  Hey you! Wanting to contribute to this website?
+  Do you know coding? If not, maybe you know a second language
+  you could translate this website into.
+
+  If you want to help this website to always be at the UX summum
+  please feel free to send pull request to the following repo:
+    - https://github.com/RicinApp/ricin.im
+-->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
+    <title>Ricin - Secure P2P instant messaging app</title>
+    <!--<link rel="stylesheet" href="static/styles/icons.css">
+    <link rel="stylesheet" href="static/styles/ricin.css">
+    <link rel="stylesheet" href="static/styles/responsive.css">-->
+    <link rel="stylesheet" href="static/styles/ricin.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Ricin</title>
-
-    <link rel="stylesheet" href="https://cdn.ricin.im/styles/kube.min.css">
-    <link rel="stylesheet" href="https://cdn.ricin.im/styles/gallery.min.css">
-    <link rel="stylesheet" href="https://cdn.ricin.im/styles/app.css?280216073530">
-    <link rel="shortcut icon" href="https://cdn.ricin.im/images/favicon.ico">
-    <link rel="apple-itouch-icon" href="https://cdn.ricin.im/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="https://cdn.ricin.im/images/apple-touch-icon.png">
+    <meta name="author" content="SkyzohKey <skyzohkey@protonmail.com>">
+    <meta name="designer" content="SkyzohKey <skyzohkey@protonmail.com>">
+    <meta name="github" content="https://github.com/RicinApp/Ricin">
+    <meta name="subject" content="Ricin aims to be a popular instant messaging client for the Tox network. We built it in order to offer the most intuitive and performing talk app.">
+    <meta name="description" content="Ricin is a secure and encrypted, simple and beautiful, peer-to-peer and customizable way to talk with people that matters in your life.">
+    <meta name="classification" content="Ricin aims to be a popular instant messaging client for the Tox network. We built it in order to offer the most intuitive and performing talk app. The point of Ricin is to provide the highest quality when chatting with your friends, contacts, employees, and other people that matters in your life.">
+    <meta name="keywords" content="ricin, tox, instant, messaging, instant messaging, talk, chat, free, open-source, ricinapp, privacy, secure, p2p, distributed, linux, anti-nsa, anti-censorship, safe, vala, gtk+3, gnome">
+    <meta name="language" content="English">
+    <meta name="publisher" content="RicinApp">
+    <meta name="distribution" content="Global">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta property="og:title" content="Ricin - Secure P2P instant messaging app">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricin.im">
+    <meta property="og:image" content="https://cdn.ricin.im/images/apple-touch-icon.png">
+    <meta property="og:site_name" content="Ricin">
+    <meta property="og:description" content="Ricin aims to be a popular instant messaging client for the Tox network. We built it in order to offer the most intuitive and performing talk app. The point of Ricin is to provide the highest quality when chatting with your friends, contacts, employees, and other people that matters in your life.">
 </head>
 <body>
   <div id="wrapper">
-    <row id="header" class="nav">
-      <column cols="3" class="nav-left">
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#download">Download</a></li>
-        </ul>
-      </column>
-      <column cols="6" class="brand">
-        <a href="/">Ricin</a>
-      </column>
-      <column cols="3" class="nav-right">
-        <ul>
-          <li><a href="https://github.com/RicinApp/Ricin">GitHub</a></li>
-          <li><a href="https://github.com/RicinApp/Ricin/issues/new">Report an issue</a></li>
-        </ul>
-      </column>
-    </row>
-
-    <section id="intro" class="hero">
-      <h1>Ricin instant messenger</h1>
-      <p class="summary">A secure, simple, lightweight but powerful instant messaging client written in Vala and using ToxCore &amp; GTK+3</p>
-      <a class="btn" type="black" href="https://github.com/RicinApp/Ricin">GitHub</a>
-      <a class="btn" type="primary" href="https://cdn.ricin.im/ricin-0.0.8-x86_64.tar.gz">Linux binary</a>
-      <p class="small muted"><span class="bold">Current version:</span> 0.0.8</p>
-    </section>
-    <section id="few-words" class="justify">
-      <span class="bold">Ricin</span> aims to be a <span class="italic">secure, lightweight, hackable and fully-customizable</span> chat client using the awesome and open-source <span class="bold">ToxCore library</span>. We know that there are several Tox clients but this project was initially made because the other clients were missing many features that users have been waiting for over many months. Ricin is a simple but powerful cross-platform client written in Vala and using Gtk+ 3.0.
-    </section>
-    <section id="features">
-      <row>
-        <column cols="3" class="text-centered start">
-          <section>
-            <h3>Instant messaging</h3>
-            Chat instantly across the globe with Ricin's secure messages. No one except the people you talk to will be able to read your messages!
-          </section>
-          <section>
-            <h3>File sharing</h3>
-            Share files securely with your friends. No artificial limits or caps. The only limitation is the speed of your connection!
-          </section>
-          <section>
-            <h3>Distributed</h3>
-            Ricin has no central servers that can be raided, shut down, or forced to turn over data — the network is made up of its users. Say goodbye to server outages!
-          </section>
-        </column>
-        <column cols="6" class="text-centered screenshots">
-          <h1>Wanting a new way to share?</h1>
-          <h4>Ricin gives you super-powers!</h4>
-          <!-- TODO: Slideshow -->
-          <!--<figure>
-            <img src="static/images/ricin_01.png">
-            <figcaption>Screenshot might be out of date but it should give you a general idea of what Ricin is.</figcaption>
-          </figure>-->
-          <div class="gallery items-4 autoplay">
-            <div id="item-1" class="control-operator"></div>
-            <div id="item-2" class="control-operator"></div>
-            <div id="item-3" class="control-operator"></div>
-            <div id="item-4" class="control-operator"></div>
-
-            <figure class="item screen">
-              <img src="https://cdn.ricin.im/images/ricin_01.png" width="945px" height="562px">
-            </figure>
-
-            <figure class="item screen">
-              <img src="https://cdn.ricin.im/images/ricin_02.png">
-            </figure>
-
-            <figure class="item screen">
-              <img src="https://cdn.ricin.im/images/ricin_03.png">
-            </figure>
-
-            <figure class="item screen">
-              <img src="https://cdn.ricin.im/images/ricin_04.png">
-            </figure>
-
-            <div class="controls">
-              <a href="#item-1" class="control-button"></a><!--
-              --><a href="#item-2" class="control-button"></a><!--
-              --><a href="#item-3" class="control-button"></a><!--
-              --><a href="#item-4" class="control-button"></a>
-            </div>
-          </div>
-        </column>
-        <column cols="3" class="text-centered end">
-          <section>
-            <h3>Swag !</h3>
-            Ricin's goal is to be eye-candy and beautiful. So, enjoy!
-          </section>
-          <section>
-            <h3>Encrypted</h3>
-            Everything you do with Ricin is encrypted using open-source libraries. The only people who can see your conversations are the people you're talking with.
-          </section>
-          <section>
-            <h3>Free!</h3>
-            Ricin is free software. That's <a href="https://www.gnu.org/philosophy/free-sw.html">free as in freedom</a>, as well as in price. This means Ricin is yours — to use, modify, and share — because Ricin is developed by and for the users.
-          </section>
-        </column>
-      </row>
-    </section>
-    <section id="download" class="text-centered">
-	<h1>So, what are you waiting for?</h1>
-	<a class="btn" type="black" href="https://github.com/RicinApp/Ricin">GitHub</a>
-	<a class="btn" type="primary" href="https://cdn.ricin.im/ricin-0.0.8-x86_64.tar.gz">Linux binary</a>
-    </section>
-
-    <footer id="footer">
-      <row>
-        <column cols="6">
-    	    <p class="left">&copy; Copyright <a href="https://ricin.im">Ricin</a> 2015 - 2016. All rights reserved.</p>
-        </column>
-        <column cols="6">
-          <nav>
+    <div id="mobile-wrapper">
+      <header id="header">
+        <div>
+          <a id="logo" href="/" alt="Ricin logo">
+            Ricin
+            <span id="mobile-tagline" aria-hidden="true">Secure P2P instant messaging app</span>
+          </a>
+          <nav id="menu">
             <ul>
-              <li><a href="https://github.com/RicinApp/ricin.im">This website on GitHub</a></li>
-              <li><a href="https://github.com/RicinApp/Ricin/graphs/contributors">Contributors</a></li>
+              <li><a href="/about"><span class="ic-lock"></span> About</a></li>
+              <li><a href="/screenshots"><span class="ic-screenshots"></span> Screenshots</a></li>
+              <li><a href="/downloads"><span class="ic-downloads"></span> Download</a></li>
+              <li><a href="https://wiki.ricin.im"><span class="ic-docs"></span> Wiki</a></li>
+              <li><a href="https://github.com/RicinApp/Ricin"><span class="ic-github"></span> GitHub</a></li>
             </ul>
           </nav>
-        </column>
-    </footer>
+        </div>
+      </header>
+      <main id="content">
+        <a id="mobile-menu-toggle" class="ic-menu" aria-hiddent="true" href="#header"></a>
+        <a id="home" aria-hiddent="true" href="#home"></a>
+        <section id="intro">
+          <div>
+            <h1>Ricin</h1>
+            <h2>
+              A secure and encrypted, simple and beautiful, peer-to-peer and customizable way to talk with people that matters in your life.
+            </h2>
+            <section id="callout">
+              <ul>
+                <li>
+                  <a class="button button-primary" href="/downloads#linux">
+                    <span class="ic-linux" aria-hidden="true"></span> GNU/Linux
+                  </a>
+                </li>
+                <li>
+                  <a class="button button-primary" href="/downloads#windows">
+                    <span class="ic-windows" aria-hidden="true"></span> Windows
+                  </a>
+                </li>
+                <li>
+                  <a class="button button-primary" href="/downloads#osx">
+                    <span class="ic-osx" aria-hidden="true"></span> Mac OSX
+                  </a>
+                </li>
+                <li>
+                  <a class="button button-primary" href="https://github.com/RicinApp/Ricin">
+                    <span class="ic-github" aria-hidden="true"></span> Source code
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <p>
+              Version <strong>0.0.9</strong> - <a href="/downloads#alts">Alternative downloads</a>
+            </p>
+          </div>
+        </section>
+        <section id="actions">
+          <nav id="external-links">
+            <ul>
+              <li>
+                <a class="link link-stars" href="https://github.com/RicinApp/Ricin/stargazers">
+                  <span class="ic-stargazers" aria-hidden="true"></span> <strong>68</strong> Stargazers
+                </a>
+              </li>
+              <li>
+                <a class="link link-forks" href="https://github.com/RicinApp/Ricin/network">
+                  <span class="ic-fork" aria-hidden="true"></span> <strong>14</strong> Forks
+                </a>
+              </li>
+              <li>
+                <a class="link link-contributors" href="https://github.com/RicinApp/Ricin/graphs/contributors">
+                  <span class="ic-contributors" aria-hidden="true"></span> <strong>7</strong> Contributors
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <span id="latest-commit">
+            Latest commit: <a class="link link-last-commit" href="https://github.com/RicinApp/Ricin/commit/96cf22c880f7e78b066cfec35b9c81dbefcecb4e">96cf22c880f7e78b066cfec35b9c81dbefcecb4e</a>
+          </span>
+        </section>
+        <section id="about">
+          <div>
+            <aside id="features">
+              <header><h3>Features</h3></header>
+              <ul>
+                <li class="ic-checked">
+                  <span>
+                    Powered by the awesome <a href="https://github.com/irungentoo/toxcore">Toxcore</a> library
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Profile encryption <abbr class="ic-question" aria-hidden="true" title="Nobody can read/access an encrypted profile (stored in your computer) without knowing the related password."></abbr>
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Encrypted instant messaging
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Encrypted file sharing
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Markdown message formatting
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Military grade encryption <abbr class="ic-question" aria-hidden="true" title="Libsodium/NaCl: Curve25519 + XSalsa20 + Poly1305"></abbr>
+                </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Secure distributed peer-to-peer network, for ever!
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    100% customizable interface
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Open-source and &nbsp;<a href="https://www.gnu.org/philosophy/free-sw.html">Free as in freedom</a>, as well as in price
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    Not controlled by any TLA <abbr class="ic-question" aria-hidden="true" title="TLA = Three Letters Agency, such as NSA, CIA, FBI, etc..."></abbr>, government or company
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    No central servers that can be raided or shutdown
+                  </span>
+                </li>
+                <li class="ic-checked">
+                  <span>
+                    No data divulgation or reselling, your datas are encrypted
+                  </span>
+                </li>
+              </ul>
+            </aside>
+            <section id="slider">
+              <header><h3>Take a tour, Ricin is a modern way to communicate!</h3></header>
+              <figure class="window">
+                <header class="window-header">
+                  <span class="window-title">
+                    Ricin - Secure Messaging demo
+                  </span>
+                  <div class="window-buttons">
+                    <span class="window-minimize"></span>
+                    <span class="window-maximize"></span>
+                    <span class="window-close"></span>
+                  </div>
+                </header>
+                <img src="static/images/ricin_01.png" title="Screenshot of Ricin's sample discussion with friend" alt="Screenshot of Ricin's sample discussion with friend">
+              </figure>
+            </section>
+          </div>
+        </section>
+        <footer id="footer">
+          <div>
+            <p id="copyright">
+              &copy; Ricin 2015-2016 - All rights reserved.
+            </p>
+            <nav id="links">
+              <ul>
+                <li>
+                  Made with <span class="heart"></span> in France!
+                </li>
+                <li><a href="https://github.com/RicinApp/ricin.im">Website repository</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+      </main>
+    </div>
   </div>
 </body>
 </html>

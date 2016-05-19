@@ -1,0 +1,166 @@
+/**
+*  COPYRIGHT (c) 2016 SkyzohKey
+*
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining
+*  a copy of this software and associated documentation files (the
+*  "Software"), to deal in the Software without restriction, including
+*  without limitation the rights to use, copy, modify, merge, publish,
+*  distribute, sublicense, and/or sell copies of the Software, and to
+*  permit persons to whom the Software is furnished to do so, subject to
+*  the following conditions:
+*
+*  The above copyright notice and this permission notice shall be
+*  included in all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+*  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+*  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+*  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+*  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+**/
+
+@font-face {
+	font-family:'Aller';
+	src: url('../fonts/Aller_gdi.eot');
+	src: url('../fonts/Aller_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Aller_gdi.woff') format('woff'),
+		url('../fonts/Aller_gdi.ttf') format('truetype'),
+		url('../fonts/Aller_gdi.svg#Aller-Regular') format('svg');
+
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face{
+  font-family:'Icons';
+  src: url('../fonts/icons-webfont.eot?v=4.6.2');
+  src: url('../fonts/icons-webfont.eot?#iefix&v=4.6.2') format('embedded-opentype'),
+    url('../fonts/icons-webfont.woff2?v=4.6.2') format('woff2'),
+    url('../fonts/icons-webfont.woff?v=4.6.2') format('woff'),
+    url('../fonts/icons-webfont.ttf?v=4.6.2') format('truetype'),
+    url('../fonts/icons-webfont.svg?v=4.6.2#iconsregular') format('svg');
+
+  font-weight:normal;
+  font-style:normal;
+}
+
+.ic-linux,
+.ic-windows,
+.ic-osx,
+.ic-archive,
+.ic-github,
+.ic-stargazers,
+.ic-fork,
+.ic-contributors,
+.ic-question,
+.ic-checked,
+.ic-unchecked,
+.ic-menu,
+.ic-docs,
+.ic-downloads,
+.ic-screenshots,
+.ic-lock {
+  font: normal normal normal 14px/1 "Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+	outline: none;
+}
+
+/**
+*  Operating systems related.
+**/
+.ic-linux::before { content: "\f17c"; }
+.ic-windows::before { content: "\f17a"; }
+.ic-osx::before { content: "\f179"; }
+.ic-archive::before { content: "\f1c6"; }
+
+/**
+*  Git related.
+**/
+.ic-github::before { content: "\f09b"; }
+.ic-stargazers::before { content: "\f005"; }
+.ic-fork::before { content: "\f126"; }
+.ic-contributors::before { content: "\f004"; }
+
+/**
+*  Generics.
+**/
+.ic-question::before { content: "\f059"; }
+.ic-checked::before { content: "\f00c"; }
+.ic-unchecked::before { content: "\f00d"; }
+.ic-menu::before { content: "\f0c9"; }
+.ic-docs::before { content: "\f02d"; }
+.ic-downloads::before { content: "\f0ed"; }
+.ic-screenshots::before { content: "\f03e"; }
+.ic-lock::before { content: "\f023"; }
+
+
+@-webkit-keyframes heartBlast {
+	0% { background-position: -5px; }
+	100% { background-position: right; }
+}
+@keyframes heartBlast {
+	0% { background-position: -5px; }
+	100% { background-position: right; }
+}
+
+.heart {
+	content: '';
+	z-index: 99999;
+	display: inline;
+	background: url("../images/heart_anim.png");
+	background-position: -7px;
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+	background-size:1450px;
+
+	display: inline-block;
+	background-image: url("../images/heart_anim.png");
+}
+
+a:hover > .heart,
+.heart:hover {
+	-webkit-animation-name: heartBlast;
+	animation-name: heartBlast;
+	-webkit-animation-duration: .8s;
+	animation-duration: .8s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: steps(28);
+	animation-timing-function: steps(28);
+}
+
+
+.red {
+  color: #E74C3C;
+}
+
+.link-stars:hover {
+    color: #f1c40f !important;
+}
+.link-forks:hover {
+    color: #2ecc71 !important;
+}
+.link-contributors:hover {
+    color: #e74c3c !important;
+}
+.link-last-commit {
+    color: #fff !important;
+		border-bottom: 1px dashed #888;
+		text-shadow: none;
+}
+.link-last-commit:hover {
+    color: #1dd2af !important;
+		border-bottom: 1px dashed #1dd2af;
+}
